@@ -1,0 +1,14 @@
+name: Energia_limpia_Mexico
+title: Energia_limpia_Mexico
+username:
+account: alexajeressi
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6493626
+bundleId: 6009860
+url: https://alexajeressi.shinyapps.io/Energia_limpia_Mexico/
+when: 1655294327.39302
+lastSyncTime: 1655294327.39302
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: www/bootstrapmin.css.css
