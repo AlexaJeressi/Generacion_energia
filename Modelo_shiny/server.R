@@ -24,21 +24,21 @@ shinyServer(function(input, output) {
         #NoFosil_privada
         Factor_de_plata_base_NoFosil_privada = 0.33*1.10 , # [1] asumimos que el factor de planta en el sector privado es 10% mayor que el del sector pÃºblico
         Costo_Desarrollo_Capacidad_NoFosil_privada = 1228, # [Millones MXN/GW instalado], este costo marginal es estimado en funcion del factor de planta estimado para el estudio y asumiendo que todas las centrales tienen la misma vida econÃ³mica y mismo tiempo de construcciÃ³n
-        Inversion_base_NoFosil_privada = 10000*incremento.privado, # 500*20 #[Millones MXN], https://www.eleconomista.com.mx/empresas/Cambia-politica-en-electricidad-y-cae-IED-del-sector-20201124-0020.html
+        Inversion_base_NoFosil_privada = 10000*(1+incremento.privado), # 500*20 #[Millones MXN], https://www.eleconomista.com.mx/empresas/Cambia-politica-en-electricidad-y-cae-IED-del-sector-20201124-0020.html
         Vida_util_Capacidad_NoFosil_privada = 23, #[anos]
         #NoFosil_publica
         Factor_de_plata_base_NoFosil_publica = 0.33*0.9 , # [1] asumimos que el factor de planta en el sector privado es 10% mayor que el del sector privado
         Costo_Desarrollo_Capacidad_NoFosil_publica =  2857, # [Millones MXN/GW instalado], este costo marginal es estimado en funcion del factor de planta estimado para el estudio y asumiendo que todas las centrales tienen la misma vida econÃ³mica y mismo tiempo de construcciÃ³n
-        Inversion_base_NoFosil_publica = 2000*incremento.publico, #[Millones MXN], https://www.eleconomista.com.mx/empresas/Cambia-politica-en-electricidad-y-cae-IED-del-sector-20201124-0020.html,,
+        Inversion_base_NoFosil_publica = 2000*(1+incremento.publico), #[Millones MXN], https://www.eleconomista.com.mx/empresas/Cambia-politica-en-electricidad-y-cae-IED-del-sector-20201124-0020.html,,
         Vida_util_Capacidad_NoFosil_publica = 23, #[anos]
         #Fosil_privada
         Factor_de_plata_base_Fosil_privada = 0.47*1.19 ,# [1] asumimos que el factor de planta en el sector privado es 10% mayor que el del sector privado
-        Costo_Desarrollo_Capacidad_Fosil_privada = 1739*impuesto.privado,  # [Millones MXN/GW instalado], este costo marginal es estimado en funcion del factor de planta estimado para el estudio y asumiendo que todas las centrales tienen la misma vida econÃ³mica y mismo tiempo de construcciÃ³n
+        Costo_Desarrollo_Capacidad_Fosil_privada = 1739*(1+impuesto.privado),  # [Millones MXN/GW instalado], este costo marginal es estimado en funcion del factor de planta estimado para el estudio y asumiendo que todas las centrales tienen la misma vida econÃ³mica y mismo tiempo de construcciÃ³n
         Inversion_base_Fosil_privada = 10000, #[Millones MXN], https://www.eleconomista.com.mx/empresas/Cambia-politica-en-electricidad-y-cae-IED-del-sector-20201124-0020.html,
         Vida_util_Capacidad_Fosil_privada = 28 , #[anos]
         #Fosil_publica
         Factor_de_plata_base_Fosil_publica = 0.47*0.90 ,# [1] asumimos que el factor de planta en el sector privado es 10% mayor que el del sector privado
-        Costo_Desarrollo_Capacidad_Fosil_publica = 5822*impuesto.publico , # [Millones MXN/GW instalado], este costo marginal es estimado en funcion del factor de planta estimado para el estudio y asumiendo que todas las centrales tienen la misma vida econÃ³mica y mismo tiempo de construcciÃ³n
+        Costo_Desarrollo_Capacidad_Fosil_publica = 5822*(1+impuesto.publico) , # [Millones MXN/GW instalado], este costo marginal es estimado en funcion del factor de planta estimado para el estudio y asumiendo que todas las centrales tienen la misma vida econÃ³mica y mismo tiempo de construcciÃ³n
         Inversion_base_Fosil_publica = 2000*incremento.fosil.publico, #[Millones MXN], https://www.eleconomista.com.mx/empresas/Cambia-politica-en-electricidad-y-cae-IED-del-sector-20201124-0020.html,,
         Vida_util_Capacidad_Fosil_publica = 28 #[ano]
       )
