@@ -1,2 +1,2 @@
 # Generacion_energia
-Este proyecto consiste en simular el actual mercado de la generación de energía en México y asi poder ver el impacto que diferente politicas públicas pueden tener
+This project consists of simulating the current energy generation market in Mexico to see the impact that different public policies can have.
